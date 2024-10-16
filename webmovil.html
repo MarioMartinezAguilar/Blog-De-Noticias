@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">	
+	<title>Web Movil</title>
+	<style>	
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.contenedor{
+			width: 500px;
+			height: 150px;
+			background: black;
+		}
+		.col{
+			width: 49%;
+			height: 150px;
+			background: blue;
+			display: inline-block;
+			border: solid 1px red;
+		}
+		@media (max-width: 376px){
+			.col{
+				display: block;
+				width: 500%;
+				box-sizing: border-box;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="col"></div>
+		<div class="col"></div>
+	</div>
+</body>
+</html>
